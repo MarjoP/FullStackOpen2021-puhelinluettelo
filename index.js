@@ -1,5 +1,5 @@
 console.log('Well, hello there my little friend!')
-const { response } = require('express')
+const { response, application } = require('express')
 const express = require('express')
 const cors = require('cors')
 const morgan = require('morgan')
@@ -9,8 +9,9 @@ morgan.token('object', function getObject(req) {
 })
 
 const app = express()
-app.use(express.json())
+app.use(express.static('build'))
 app.use(cors())
+app.use(express.json())
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :object'))
 
 let persons = [
