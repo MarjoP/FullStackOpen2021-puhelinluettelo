@@ -1,0 +1,32 @@
+{
+  "name": "fullstackopen2021-puhelinluettelo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarjoP/FullStackOpen2021-puhelinluettelo.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Marjo Pantsar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarjoP/FullStackOpen2021-puhelinluettelo/issues"
+  },
+  "homepage": "https://github.com/MarjoP/FullStackOpen2021-puhelinluettelo#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
